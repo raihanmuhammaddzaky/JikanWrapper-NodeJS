@@ -41,6 +41,10 @@ export default function setupAnimeEndpoints(client) {
     }
 
     client.getAnimePictures = async (id) => {
+        return await fetchAnimeData(id, "pictures");
+    }
+
+    client.getAnimeStatistics = async (id) => {
         return await fetchAnimeData(id, "statistics");
     }
 
