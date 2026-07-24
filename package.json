@@ -1,6 +1,6 @@
 {
   "name": "jikan-wrapper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An API wrapper for Jikan anime API",
   "main": "index.js",
   "type": "module",
@@ -9,5 +9,11 @@
   },
   "author": "Muhammad Dzaky Raihan",
   "license": "ISC",
-  "keywords": ["jikan", "anime", "api", "wrapper", "myanimelist"]
+  "keywords": [
+    "jikan",
+    "anime",
+    "api",
+    "wrapper",
+    "myanimelist"
+  ]
 }
