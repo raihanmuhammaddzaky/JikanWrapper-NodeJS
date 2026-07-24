@@ -1,4 +1,4 @@
-import setupAnimeEndpoints from "./endpoints/anime";
+import setupAnimeEndpoints from "./endpoints/anime.js";
 
 class JikanClient {
     constructor() {

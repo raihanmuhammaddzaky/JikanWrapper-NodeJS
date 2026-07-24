@@ -1,4 +1,4 @@
 
-import JikanClient from "./src/JikanWrapper";
+import JikanClient from "./src/JikanWrapper.js";
 
 export default JikanClient;
