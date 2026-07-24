@@ -4,7 +4,7 @@ export default function setupAnimeEndpoints(client) {
 
     const fetchAnimeData = async (id, endpoint) => {
         validateId(id);
-        const data = await client._request(`anime/${id}/${endpoint}`);
+        const data = await client._request(`/anime/${id}/${endpoint}`);
         return data;
     }
 

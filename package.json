@@ -8,5 +8,6 @@
     "test": "node --test --test-reporter=spec"
   },
   "author": "Muhammad Dzaky Raihan",
-  "license": "ISC"
+  "license": "ISC",
+  "keywords": ["jikan", "anime", "api", "wrapper", "myanimelist"]
 }
