@@ -1,6 +1,6 @@
 {
   "name": "@raihandzaky/jikan-wrapper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An API wrapper for Jikan anime API",
   "main": "index.js",
   "type": "module",
