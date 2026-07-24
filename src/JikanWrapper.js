@@ -1,6 +1,9 @@
+import setupAnimeEndpoints from "./endpoints/anime";
+
 class JikanClient {
     constructor() {
-        this.baseUrl = 'https://api.jikan.moe/v4'
+        this.baseUrl = 'https://api.jikan.moe/v4';
+        setupAnimeEndpoints(this);
     }
 
     async _request(endpoint) {

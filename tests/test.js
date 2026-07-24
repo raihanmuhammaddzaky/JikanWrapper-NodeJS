@@ -1,8 +1,6 @@
-import JikanClient from '../src/JikanClient.js';
+import JikanClient from '../src/JikanWrapper.js';
 import { test } from 'node:test';
 import assert from 'node:assert';
-
-
 
 const jikan = new JikanClient();
 
