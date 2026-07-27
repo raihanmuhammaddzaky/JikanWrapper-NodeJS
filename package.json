@@ -1,10 +1,10 @@
 {
   "name": "@raihandzaky/jikan-wrapper",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "An API wrapper for Jikan anime API",
   "main": "index.js",
   "type": "module",
-    "scripts": {
+  "scripts": {
     "test": "node --test --test-reporter=spec",
     "test:anime": "node --test tests/anime-unit.test.js --test-reporter=spec",
     "test:validator": "node --test tests/validator-unit.test.js --test-reporter=spec",
