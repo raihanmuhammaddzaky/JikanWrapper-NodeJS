@@ -20,12 +20,12 @@ export default function setupAnimeEndpoints(client) {
      * @param {number} [queryParams.limit] - Number of results per page.
      * @returns {Promise<Object>} The anime search results.
      */
-    client.searchAnime = async (queryParams = {}) => {
-        const queryString = new URLSearchParams(queryParams).toString();
+
+    client.searchAnimeByTitle = async (title) => {
 
         let finalUrl = "/anime";
-        if (queryString) {
-            finalUrl += `?${queryString}`;
+        if (title) {
+            finalUrl += `?q=${title}`;
         }
 
         return await client._request(finalUrl);
