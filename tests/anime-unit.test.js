@@ -92,6 +92,21 @@ describe("Unit Test : Testing Anime Endpoint", () => {
         assert.strictEqual(data.interceptedUrl, 'anime/21/relations')
     });
 
+    it("searchAnime: Harus merangkai URL '/anime' jika parameter kosong", async () => {
+        const client = createMockClient();
+        const data = await client.searchAnime();
+
+        assert.strictEqual(data.interceptedUrl, '/anime');
+    });
+
+    it("searchAnime: Harus merangkai URL dengan query string jika parameter diisi", async () => {
+        const client = createMockClient();
+        const data = await client.searchAnime({ q: "naruto", limit: 5 });
+
+        assert.strictEqual(data.interceptedUrl, '/anime?q=naruto&limit=5');
+    });
+
+
 });
 
 

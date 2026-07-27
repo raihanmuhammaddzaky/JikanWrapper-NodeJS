@@ -8,6 +8,17 @@ export default function setupAnimeEndpoints(client) {
         return data;
     }
 
+    client.searchAnime = async (queryParams = {}) => {
+        const queryString = new URLSearchParams(queryParams).toString();
+
+        const finalUrl = "/anime";
+        if (queryString) {
+            finalUrl += `?${queryString}`;
+        }
+
+        return await client._request(finalUrl);
+    }
+
     client.getAnimeById = async (id) => {
         return await fetchAnimeData(id, "full");
     }

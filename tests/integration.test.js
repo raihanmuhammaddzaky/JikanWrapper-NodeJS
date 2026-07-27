@@ -25,6 +25,15 @@ describe("Integration Test: Anime Endpoints (Kategori 1 - Positif)", () => {
         assert.strictEqual(response.data.mal_id, 1, "ID Episode harus 1");
     });
 
+    it("searchAnime: Harus mengembalikan data anime asli dari internet", async () => {
+        const response = await jikan.searchAnime({ q: "naruto", limit: 3 });
+
+        assert.ok(response.data.length > 0, "Array hasil pencarian tidak boleh kosong");
+
+        assert.ok(response.data.length <= 3, "Hasil pencarian tidak boleh lebih dari 3");
+    });
+
+
 });
 
 
